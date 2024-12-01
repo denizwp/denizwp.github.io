@@ -1,4 +1,3 @@
-// Suçlama verileri
 const crimes = [
     { name: "Kamu Görevinde Yolsuzluk", minDays: 4, maxDays: 7, bail: 0, felony: true },
     { name: "Kamu Görevini İhmal", minDays: 3, maxDays: 6, bail: 0, felony: true },

@@ -84,7 +84,8 @@ const searchBox = document.getElementById("myInput");
 
 // Suçlamaları dropdown'a ekle
 function updateDropdown(crimesToShow) {
-    dropdownContent.innerHTML = ''; // Eski suçlamaları temizle
+    // dropdownContent.innerHTML = ''; // Eski suçlamaları temizle
+    $("#myDropdown").empty();
     crimesToShow.forEach((crime) => {
         const option = document.createElement("a");
         option.textContent = crime.name;  // felony true ise (F) ekle

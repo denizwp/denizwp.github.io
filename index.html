@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suçlama Hesaplama</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        select, input, button {
+            margin: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <h1>Suçlama Hesaplama</h1>
+    <label for="crimesDropdown">Suçlama Listesi:</label>
+    <select id="crimesDropdown">
+        <!-- Suçlama isimleri buraya dinamik olarak eklenecek -->
+    </select>
+    <button id="addCrimeButton">Ekle</button>
+
+    <h2>Seçilen Suçlamalar</h2>
+    <ul id="selectedCrimes">
+        <!-- Seçilen suçlamalar buraya eklenecek -->
+    </ul>
+
+    <h3>Sonuçlar</h3>
+    <label for="totalInput">Toplam Süre (Dakika):</label>
+    <input type="text" id="totalInput" readonly>
+    <br>
+    <label for="maxInput">Toplam Maksimum Süre (Dakika):</label>
+    <input type="text" id="maxInput" readonly>
+    <br>
+    <label for="bailInput">Toplam Kefalet:</label>
+    <input type="text" id="bailInput" readonly>
+
+    <script src="app.js"></script>
+</body>
+</html>

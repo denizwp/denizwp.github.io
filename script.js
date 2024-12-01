@@ -91,7 +91,8 @@ function updateDropdown(crimesToShow) {
         option.onclick = function() {
             addCrimeToSelectedList(crime);
         };
-        dropdownContent.appendChild(option);
+        // dropdownContent.appendChild(option);
+        $("#myDropdown").append(option);
     });
 }
 

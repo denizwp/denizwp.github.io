@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+h2 {
+    margin-bottom: 20px;
+}
+
+.dropdown {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 300px;
+    height: 100%;
+    background-color: #f6f6f6;
+    border-left: 1px solid #ddd;
+    overflow-y: scroll;
+    padding-top: 20px;
+    box-sizing: border-box;
+}
+
+#myInput {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.dropdown-content {
+    display: block;
+    padding: 10px;
+    padding-bottom: 20px;
+}
+
+.dropdown-content a {
+    display: block;
+    padding: 12px 16px;
+    margin-bottom: 10px; /* Aralarına boşluk ekleyelim */
+    text-decoration: none;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.crime-list {
+    margin-top: 20px;
+}
+
+.crime-list li {
+    margin: 10px 0; /* Liste elemanları arasında boşluk */
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    width: fit-content;
+}
+
+.crime-list button {
+    margin-left: 10px;
+}
+
+.totals input {
+    margin: 10px 0;
+}
+
+h3 {
+    margin-top: 30px;
+}

@@ -2,32 +2,33 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Suçlama Hesaplama</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 20px;
-        }
-        select, input, button {
-            margin: 10px 0;
-        }
-    </style>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SADCR | Süç Süre Hesaplayıcı</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Suçlama Hesaplama</h1>
-    <label for="crimesDropdown">Suçlama Listesi:</label>
-    <select id="crimesDropdown">
-        <!-- Suçlama isimleri buraya dinamik olarak eklenecek -->
-    </select>
-    <button id="addCrimeButton">Ekle</button>
 
-    <h2>Seçilen Suçlamalar</h2>
-    <ul id="selectedCrimes">
-        <!-- Seçilen suçlamalar buraya eklenecek -->
-    </ul>
+<h2>SADCR | Suç Süre Hesaplayıcı</h2>
+<p>
+    - Bu site, SADCR personelleri için denizwp <a style="font-style: italic; font-size: medium;">*chatgpt</a> tarafından hazırlanmıştır. Yani hatalar için discord: denizwp
+    <br>
+    - (min=max) yazan suçlamalarda tek bir süre belirtilmiştir, lütfen ceza kanununa göz atın.
+    <br>
+    - BU DÖKÜMAN SADECE GÜN CİNSİNDEN HESAPLANABİLİR SUÇLARI İÇERİYOR, SAAT İÇERENLER BULUNMAZ!
+    <br>
+    <a href="https://forum-tr.gta.world/index.php?/topic/77-san-andreas-ceza-kanunu/" style="font-weight: bold;" target="_blank">- CEZA KANUNU</a>
+</p>
 
-    <h3>Sonuçlar</h3>
+<!-- Suçlama Seçim Menüsü -->
+<div class="dropdown">
+    <input type="text" placeholder="Suçlama Ara..." id="myInput" onkeyup="filterFunction()">
+    <div id="myDropdown" class="dropdown-content">
+        <!-- Suçlama linkleri burada dinamik olarak görünecek -->
+    </div>
+</div>
+
+<div class="totals">
+    <h3>Hesaplamalar</h3>
     <label for="totalInput">Toplam Süre (Dakika):</label>
     <input type="text" id="totalInput" readonly>
     <br>
@@ -36,7 +37,13 @@
     <br>
     <label for="bailInput">Toplam Kefalet:</label>
     <input type="text" id="bailInput" readonly>
+</div>
 
-    <script src="app.js"></script>
+<h3>Seçilen Suçlamalar</h3>
+<ul id="selectedCrimes" class="crime-list">
+    <!-- Seçilen suçlamalar burada listelenecek -->
+</ul>
+
+<script src="script.js"></script>
 </body>
 </html>
